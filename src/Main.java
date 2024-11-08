@@ -12,6 +12,8 @@
 // int   Integer
 // double  Double
 
+import java.util.ArrayList;
+
 // autoboxing = the automatic conversion that the Java compiler makes between the primitive types and their corresponding object wrapper classes
 // unboxing = the reverse of autoboxing. Automatic conversion of wrapper class to primitive
 public class Main {
@@ -25,6 +27,26 @@ public class Main {
         if (a == true){
             System.out.println("true");
         }
+
+        // Array list
+        // it's a resizable array
+        // Elements can be added and remove after compilation phase
+        // store reference data type
+        ArrayList<String> food = new ArrayList<String>();
+        food.add("Apple");
+        food.add("Banana");
+        food.add("Bread");
+        food.set(0,"Sushi");
+        // replace element
+        food.remove(2);
+        for (int i= 0; i < food.size(); i++){
+            System.out.println(food.get(i));
+        }
+        food.clear();
+        boolean foods = food.isEmpty();
+        System.out.println(foods);
+
+
 
     }
 }
